@@ -44,8 +44,8 @@ export default function Navbar() {
 						</li>
 					</ul>
 				</div>
-				<a className="btn  btn-ghost normal-case text-xl">
-					<img src={logo} alt="logo" />
+				<a className="btn   btn-ghost normal-case text-xl">
+					<img src={logo} alt="logo" className="hover:bg-none" />
 				</a>
 			</div>
 			<div className="navbar-center hidden lg:flex">

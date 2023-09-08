@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import img1 from "../../assets/images/Frame1.png";
 import img2 from "../../assets/images/Frame2.png";
 import img3 from "../../assets/images/Frame3.png";
@@ -8,7 +7,7 @@ import img4 from "../../assets/images/Frame4.png";
 
 export default function Contact() {
 	const contact = [
-		{ 
+		{
 			id: "01",
 			icon: img1,
 			title: "Address",
@@ -50,17 +49,20 @@ export default function Contact() {
 			</div>
 			<div className="grid grid-cols-2 items-center my-5 w-3/4 gap-x-5  mx-auto">
 				<div className="contact-content">
-					<div className="left-site grid gap-1 grid-cols-2">
+					<div className="left-site my-3 grid gap-1 grid-cols-2">
 						{contact.map((item) => {
 							const { id, text, subText, title, icon } = item;
 							return (
-								<div className="  shadow-lg  p-5 bg-slate-100" key={id}>
-									<span>
+								<div
+									className="text-center  shadow-lg  p-5 bg-slate-100"
+									key={id}
+								>
+									<span className="my-3 flex justify-center m-auto">
 										<img src={icon} alt="icon" />
 									</span>
-									<h6>{title}</h6>
-									<p>{text}</p>
-									<p>{subText}</p>
+									<h6 className="font-[700] my-3">{title}</h6>
+									<p className="font-[500] text-sm">{text}</p>
+									<p className="font-[500] text-sm">{subText}</p>
 								</div>
 							);
 						})}
@@ -69,10 +71,28 @@ export default function Contact() {
 
 				<div className="form-area my-5 w-1/2">
 					<form action="" className=" flex-col gap-2 grid">
-						<input type="text" className="bg-slate-100 p-2 outline-none caret-red-700" placeholder="Your Name" />
-						<input className="bg-slate-100  outline-none  caret-green-800 p-2 w-96 my-2" type="email" placeholder="Your Email" />
-						<input type="text" className="bg-slate-100 my-2 w-96 p-2 caret-emerald-800 outline-none" placeholder="Your Subject" />
-						<textarea placeholder="Write Your Message" className=" bg-slate-100 p-3 outline-none " name="" rows={5}></textarea>
+						<input
+							type="text"
+							className="bg-slate-100 p-2 outline-none caret-red-700"
+							placeholder="Your Name"
+						/>
+						<input
+							className="bg-slate-100  outline-none  caret-green-800 p-2 w-96 my-2"
+							type="email"
+							placeholder="Your Email"
+						/>
+						<input
+							type="text"
+							className="bg-slate-100 my-2 w-96 p-2 caret-emerald-800 outline-none"
+							placeholder="Your Subject"
+						/>
+						<textarea
+							placeholder="Write Your Message"
+							className=" bg-slate-100 p-3 outline-none "
+							name=""
+							rows={5}
+						></textarea>
+						<input type="Submit" value='Send Message'  className="bg-[#b68c5a] py-3 px-5 text-white font-[500] mt-2 rounded-md"/>
 					</form>
 				</div>
 			</div>

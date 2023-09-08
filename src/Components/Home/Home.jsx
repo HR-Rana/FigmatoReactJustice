@@ -5,6 +5,7 @@ import LegalPractice from "../LegalPractice/LegalPractice";
 import Testimonials from "./../Testimonials/Testimonials";
 import Faq from "./../FAQ/Faq";
 import Contact from "../ContactUs/Contact";
+import Footer from "../Footer/Footer";
 
 export default function Home() {
 	return (
@@ -26,6 +27,9 @@ export default function Home() {
 			</section>
 			<section>
 				<Contact />
+			</section>
+			<section>
+				<Footer></Footer>
 			</section>
 		</>
 	);
