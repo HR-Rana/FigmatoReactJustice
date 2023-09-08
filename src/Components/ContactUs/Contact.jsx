@@ -8,7 +8,7 @@ import img4 from "../../assets/images/Frame4.png";
 
 export default function Contact() {
 	const contact = [
-		{
+		{ 
 			id: "01",
 			icon: img1,
 			title: "Address",
