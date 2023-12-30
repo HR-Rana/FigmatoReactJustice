@@ -7,7 +7,7 @@ export default function Faq() {
 				<h3 className="text-2xl font-[600] my-3">Frequently Asked Any Questions</h3>
 				<p className="w-1/2 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
 			</div>
-			<div className=" my-5 p-2 grid grid-cols-2 gap-3">
+			<div className="my-5 p-2 grid grid-cols-1 md:grid-cols-2 gap-3">
 				<div class="join w-full flex my-auto  items-center join-vertical">
 					<div class="collapse collapse-arrow join-item border border-base-300">
 						<input type="radio" name="my-accordion-4" checked="checked" />

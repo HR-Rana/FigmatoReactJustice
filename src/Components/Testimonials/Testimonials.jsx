@@ -5,7 +5,7 @@ export default function Testimonials() {
 		<div className="flex">
 			<div class="carousel w-full">
 				<div id="slide1" class="carousel-item relative w-full">
-					{/* <div className="content top-0 left-auto none absolute text-white">
+					<div className="content absolute  text-white">
 						<span>
 							<img src={img} alt="img" />
 						</span>
@@ -17,8 +17,11 @@ export default function Testimonials() {
 							laboriosam cumque fugiat suscipit totam consequatur impedit
 							expedita ullam placeat!
 						</p>
-					</div> */}
-					<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+					</div>
+					<div
+						class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 "
+						style={{ backgroundImage: `url(${img})` }}
+					>
 						<a href="#slide4" class="btn btn-circle">
 							❮
 						</a>
@@ -27,7 +30,10 @@ export default function Testimonials() {
 						</a>
 					</div>
 				</div>
-				<div id="slide2" class="carousel-item relative w-full">
+				<div
+					id="slide2"
+					class="carousel-item relative w-full h-full bg-[url('../../assets/images/Background.png')]"
+				>
 					{/* <div className="content top-0  left-auto none absolute text-white">
 						<span>
 							<img src={img} alt="img" />

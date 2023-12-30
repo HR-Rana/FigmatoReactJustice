@@ -8,7 +8,7 @@ import img from '../../assets/images/send.png'
 export default function Footer() {
 	return (
 		<div className="p-5 py-8 bg-black ">
-			<div className="container text-gray-300 grid grid-cols-4 ">
+			<div className="container mx-auto text-gray-300 grid grid-cols-1 md:grid-cols-4">
 				<div className="f-logo">
 					<img src={img1} alt="" />
 					<p className="my-3">
@@ -17,7 +17,7 @@ export default function Footer() {
 						humour.
 					</p>
 				</div>
-				<div className="w-[80] mx-auto">
+				<div className="w-[80] mx-0 md-mx-auto">
 					<h4 className="text-2xl font-900 my-3">Useful Links</h4>
 					<span className="list-none ">
 						<li>
@@ -60,9 +60,9 @@ export default function Footer() {
 						Subscribe for our latest & Articles. We Won’t Give You Spam Mails
 					</p>
 
-					<form className="flex my-2 items-center">
+					<form className="flex my-2 grid-cols-1 md:grid-cols-2 items-center">
 						<input type="text" placeholder="Email" className="p-2 text-black outline-none" />
-						<button className="w-13 rounded-none bg-[#b68c5a] p-2 outline-none border-none py-1"><img src={img} alt="" /></button>
+						<button className="w-13 lg:w-[25%] rounded-none bg-[#b68c5a] p-2 outline-none border-none py-1"><img src={img} alt="" /></button>
 					</form>
 				</div>
 			</div>

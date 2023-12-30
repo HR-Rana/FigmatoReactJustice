@@ -3,8 +3,8 @@ import React from "react";
 export default function Hero() {
 	return (
 		<div className="hero-area h-full">
-			<div className="content w-4/6 mx-auto py-8 translate-y-1/4  sm:translate-y- md:h-full text-center md:translate-x-0 text-white flex flex-col items-center gap-4">
-				<h1 className="text-10xl">We Provide Effective Legal Solutions</h1>
+			<div className="content w-4/6 mx-auto py-8  sm:translate-y-0 md:translate-y-1/6 md:h-full text-center md:translate-x-0 text-white flex flex-col items-center gap-4">
+				<h1 className="text-2xl sm:text-4xl md:text-6xl">We Provide Effective Legal Solutions</h1>
 				<p className="text-md">
 					There are many variations of passages of Lorem Ipsum available, but
 					the majority have suffered alteration in some form, by injected

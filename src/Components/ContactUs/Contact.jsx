@@ -47,7 +47,7 @@ export default function Contact() {
 					humour.
 				</p>
 			</div>
-			<div className="grid grid-cols-2 items-center my-5 w-3/4 gap-x-5  mx-auto">
+			<div className="grid grid-cols-1 md:grid-cols-2 items-center my-5 w-3/4 gap-x-5  mx-auto">
 				<div className="contact-content">
 					<div className="left-site my-3 grid gap-1 grid-cols-2">
 						{contact.map((item) => {
